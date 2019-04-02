@@ -5,6 +5,8 @@ import './App.css';
 
 import navs from './data'
 import NavWrapper from './components/NavWrapper'
+import SubNav from './components/SubNav'
+import Nav from './components/Nav'
 
 class App extends Component {
   constructor() {
@@ -19,6 +21,7 @@ class App extends Component {
       <ul className="navbar">
         <NavWrapper navs={this.state.navs}></NavWrapper>
       </ul>
+      <Route path="/:category" render={props => <Nav {...props} data={this.state.navs}/>} />
       </div>
     );
   }

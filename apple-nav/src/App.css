@@ -19,3 +19,11 @@
   padding: 20px;
 
 }
+
+.sub-nav {
+  display: flex;
+}
+
+.nav {
+  display: flex;
+}

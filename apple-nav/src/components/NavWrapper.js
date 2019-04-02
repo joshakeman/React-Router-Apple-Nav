@@ -9,7 +9,7 @@ const NavWrapper = props => {
         // <p>Nav Item</p>
      <div className="navbar-div">
         {navProps.map(navItem => (
-         <Nav key={navItem.navTitle} itemData={navItem} />     
+         <Nav {...props} key={navItem.navTitle} itemData={navItem} />     
         ))}
     </div>
     )
