@@ -2,6 +2,20 @@
   text-align: center;
 }
 
+.navbar {
+  display: flex;
+  justify-content: center;
+}
+
 .navbar a {
   padding: 20px;
+}
+
+.navbar-div {
+  display: flex;
+}
+
+.navbar-div p {
+  padding: 20px;
+
 }
