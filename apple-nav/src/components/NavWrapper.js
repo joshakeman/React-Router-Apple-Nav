@@ -4,12 +4,11 @@ import '../App.css';
 
 
 const NavWrapper = props => {
-    const navProps = props.navs
     return (
         // <p>Nav Item</p>
      <div className="navbar-div">
-        {navProps.map(navItem => (
-         <Nav {...props} key={navItem.navTitle} itemData={navItem} />     
+        {props.navs.map(navItem => (
+         <Nav key={navItem.navTitle} itemData={navItem} />     
         ))}
     </div>
     )

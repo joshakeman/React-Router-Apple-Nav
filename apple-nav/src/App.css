@@ -8,7 +8,7 @@
 }
 
 .navbar a {
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .navbar-div {
@@ -16,14 +16,21 @@
 }
 
 .navbar-div p {
-  padding: 20px;
+  padding: 0 20px;
 
 }
 
 .sub-nav {
   display: flex;
+  justify-content: center;
+}
+
+.sub-nav p {
+  padding: 0 20px;
+  font-weight: bold;
 }
 
 .nav {
   display: flex;
+  flex-direction: column;
 }

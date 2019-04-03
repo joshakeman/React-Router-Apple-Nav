@@ -1,17 +1,17 @@
 import React from 'react'
 
 const SubNav = props => {
-    console.log(props.data.subNavs)
+    const category = props.match.params.category
+    const thisCategory = props.data.find(item => item.navTitle === category)
+    console.log(category)
+
     return (
-        // <div>
-        //     {props.itemData.map(item => 
-        //         <p>{item}</p>
-        //     )}
-        // </div>
-        <div>
-            {props.data.subNavs.map(item => 
+        <div className="sub-nav">
+            {thisCategory.subNavs.map(item => 
                 <p>{item}</p>
+            
             )}
+                
         </div>
     )
 }

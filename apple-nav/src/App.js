@@ -18,10 +18,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-      <ul className="navbar">
-        <NavWrapper navs={this.state.navs}></NavWrapper>
-      </ul>
-      <Route path="/:category" render={props => <Nav {...props} data={this.state.navs}/>} />
+        <div className="navbar">
+          <NavWrapper navs={this.state.navs}></NavWrapper>
+        </div>
+        <Route path="/:category" render={props => <SubNav {...props} data={this.state.navs}/>}/>
       </div>
     );
   }

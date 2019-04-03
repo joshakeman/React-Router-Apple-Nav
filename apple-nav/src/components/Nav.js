@@ -8,16 +8,13 @@ const Nav = props => {
     // console.log(props)
     // console.log(props.itemData)
     // console.log(props.itemData.NavTitle)
+    const { itemData } = props
     return (
         <div className="nav">
 
-        <NavLink to={`/${props.key}`}><p>{props.itemData.navTitle}</p></NavLink>
+        <NavLink to={`/${props.itemData.navTitle}`}><p>{props.itemData.navTitle}</p></NavLink>
+        {/* <Route path="/:category" render={props => <SubNav {...props} data={itemData}/>}/> */}
 
-        {/* <p>{props.itemData.navTitle}</p> */}
-        <Route path="/:category/" render={props => <SubNav data={props.itemData}/>}/>
-
-        {/* <SubNav data={props.itemData}/> */}
-        {/* <p>Nav Item</p> */}
         </div>
 
     )
